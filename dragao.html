@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokédex - 8ª Gen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(196, 196, 196);
+        }
+
+        .imgheader{
+            height: 1000px;
+            width: 100%; 
+            filter: brightness(50%);
+            padding-bottom: 20px;
+        }
+
+        .divmenu{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(0, 174, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header{
+            color: white;
+            font-weight: 600;
+            display: flex;
+            margin: 0%;
+            padding: 0%;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            list-style-type: none;
+        }
+        
+        .textimgheader{
+            color: white;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 50%;  
+        }
+
+        .logpok{
+            width: 40px;
+            height: 40px;
+        }
+
+        .lipok{
+            padding-left: 300px;
+        }
+
+        li{
+            padding-right: 30px;
+        }
+
+        .gera{
+            font-size: 5rem;
+        }
+
+        .menu{
+            color: white;
+        }
+        
+        .menu:hover{
+            color: aqua
+        }
+
+        a{
+            color: white
+        }
+
+        a:hover{
+            color: aqua;
+        }
+        
+        .dropdown-toggle {
+            background-color: transparent; 
+            font-weight: 600;
+            border: none; 
+            color: rgb(255, 255, 255); 
+        }
+        .dropdown-toggle:hover,
+        .dropdown-toggle:focus {
+            color: aqua;
+            background-color: transparent;
+            box-shadow: none; 
+        }
+
+        .divmae{
+            background-color: white;
+            height: auto;
+            width: 60%;
+            justify-content: center;
+            margin-left: 20%;
+            padding-top: 10px;
+            padding-left: 40px;
+        }
+
+        col{
+            margin: 0%;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="divmenu">
+        <a href="componentes.html"><img src="https://th.bing.com/th/id/R.50e5a11b866f739cf5904f1fc0f80535?rik=o8mumcl4LvHtwQ&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258617bdog.png&ehk=a3mBf1C3uxf0QyBVX4dlwEfOeMbi1aVLsnascatqQ%2f4%3d&risl=&pid=ImgRaw&r=0" class="logpok"></a>
+        <ol class="header">
+            <li class="menu lipok"><a href="" >Início</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categoria
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="normal.html">Normal</a>
+                      <a class="dropdown-item" href="Fogo.html">Fogo</a>
+                      <a class="dropdown-item" href="agua.html">Água</a>
+                      <a class="dropdown-item" href="eletrico.html">Elétrico</a>
+                      <a class="dropdown-item" href="grama.html">Grama/planta</a>
+                      <a class="dropdown-item" href="gelo.html">Gelo</a>
+                      <a class="dropdown-item" href="luta.html">Luta</a>
+                      <a class="dropdown-item" href="Veneno.html">Veneno</a>
+                      <a class="dropdown-item" href="terra.html">Terra</a>
+                      <a class="dropdown-item" href="voador.html">Voador</a>
+                      <a class="dropdown-item" href="psiquico.html">Psíquico</a>
+                      <a class="dropdown-item" href="inseto.html">Inseto</a>
+                      <a class="dropdown-item" href="pedra.html">Pedra</a>
+                      <a class="dropdown-item" href="fantasma.html">Fantasma</a>
+                      <a class="dropdown-item" href="dragao.html">Dragão</a>
+                      <a class="dropdown-item" href="sombrio.html">Sombrio</a>
+                      <a class="dropdown-item" href="aco.html">Aço</a>
+                      <a class="dropdown-item" href="fada.html">Fada</a>
+                    </div>
+                  </div>
+            </li>
+            <li class="menu"><a href="treinador.html" >Treinador</a></li>
+            <li class="menu"><a href="cadastro.html" >Cadastro</a></li>
+        </ol>
+    </div>
+    <div>
+        <img src="https://wallpapercave.com/wp/wp4359884.jpg" class="imgheader">
+        <div class="textimgheader">
+            <h1 class="gera">Generation 8º</h1>
+            <h2>Pokémons Dragão</h2>
+        </div>
+    </div>
+    
+    <div class="divmae">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/840.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Applin</h5>
+                        <p class="card-text">Pokémon resto de maçã, Tipo Planta/Dragão. Passa toda a sua vida dentro de uma maçã, que serve de alimento para si e abrigo contra inimigos naturais. O sabor da fruta determina a sua evolução.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/841.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Flapple</h5>
+                        <p class="card-text">Evolução do Applin, Tipo Planta/Dragão. Atinge essa forma após comer uma maçã azeda. Em suas bochechas ele armazena ácidos poderosos e cospe nos seus oponentes causando queimaduras químicas. Possui asas de casca de maçã e é capaz de mudar sua forma para a de uma maçã.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/842.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Appletunp>
+                        <p class="card-text">Evolução do Applin, Tipo Planta/Dragão. Atinge essa forma após comer uma maçã doce. Seu corpo é coberto de um néctar doce que atrai Pokémon insetos dos quais se alimenta. A pele em suas costas é tão gostosa que as crianças costumavam comê-la como lanche.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/880.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Dracozolt</h5>
+                        <p class="card-text">Pokémon fóssil, Tipo Dragão/Elétrico. Nos tempos antigos era imbatível graças a poderosa parte inferior do seu corpo, em contraste com a parte superior que é menor. Os músculos em sua cauda geram eletricidade. Esse Pokémon foi extinto devido ao esgotamento de sua dieta a base de plantas.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/882.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Dracovish</h5>
+                        <p class="card-text">Pokémon fóssil, Tipo Água/Dragão. Suas poderosas pernas são capazes de ultrapassar 60 km/h. Juntamente com sua forte mandíbula, fizeram dele o maior predador da época. No entanto, só conseguia respirar embaixo d'água. O excesso de caça levou a sua extinção.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/884.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Duraludon</h5>
+                        <p class="card-text">Pokémon liga metálica, Tipo Dragão/Aço. O metal que compõe seu corpo é muito leve e forte, fazendo com que este pokémon seja consideravelmente ágil. Seu corpo enferruja facilmente, por isso vive em cavernas para evitar a chuva.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/885.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Dreepy</h5>
+                        <p class="card-text">Pokémon remanescente, Tipo Dragão/Fantasma. Depois de renascer como um Pokémon fantasma, Dreepy vaga pelas áreas que costumava habitar enquanto vivo em mares pré-históricos. Sozinho é fraco, mas se for treinado pode evoluir e se tornar muito mais poderoso.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/886.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Drakloak</h5>
+                        <p class="card-text">Evolução do Dreepy, Tipo Dragão/Fantasma. Ele sempre luta ao lado de um Dreepy, cuidando dele até que consiga evoluir. Quando não está acompanhado de um Dreepy, fica incomodado e tenta substituí-lo por qualquer outro Pokémon que encontrar. É capaz de voar em velocidades acima de 200 km/h.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/887.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Dragapult</h5>
+                        <p class="card-text">Forma final do Dreepy, Tipo Dragão/Fantasma. Quando não está lutando, ele mantém os Dreepy nos buracos de seus chifres. Uma vez que a batalha começa, ele lança os Dreepy como mísseis supersônicos.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/890.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Eternatus</h5>
+                        <p class="card-text">Pokémon gigante, Tipo Dragão/Venenoso. Este Pokémon foi encontrado dentro de um meteorito que caiu há 20.000 anos atrás. O Núcleo em seu peito absorve energia que emana das terras de Galar, permitindo que Eternatus continue ativo. Parece haver uma conexão entre este Pokémon e o fenômeno de Gigantamax e Dynamax.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/895.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Ragidrago</h5>
+                        <p class="card-text">Pokémon orbe dragão, Tipo Dragão. Seu corpo é composto de energia de dragão cristalizada. Acredita-se que este Pokémon possui o poder de cada Pokémon dragão existente. Existem teorias que dizem que os braço do Regidrago já foram a cabeça de algum antigo Pokémon dragão, mas não há comprovação.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

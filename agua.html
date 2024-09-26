@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokédex - 8ª Gen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(196, 196, 196);
+        }
+
+        .imgheader{
+            height: 1000px;
+            width: 100%; 
+            filter: brightness(50%);
+            padding-bottom: 20px;
+        }
+
+        .divmenu{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(0, 174, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header{
+            color: white;
+            font-weight: 600;
+            display: flex;
+            margin: 0%;
+            padding: 0%;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            list-style-type: none;
+        }
+        
+        .textimgheader{
+            color: white;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 50%;  
+        }
+
+        .logpok{
+            width: 40px;
+            height: 40px;
+        }
+
+        .lipok{
+            padding-left: 300px;
+        }
+
+        li{
+            padding-right: 30px;
+        }
+
+        .gera{
+            font-size: 5rem;
+        }
+
+        .menu{
+            color: white;
+        }
+        
+        .menu:hover{
+            color: aqua
+        }
+
+        a{
+            color: white
+        }
+
+        a:hover{
+            color: aqua;
+        }
+        
+        .dropdown-toggle {
+            background-color: transparent; 
+            font-weight: 600;
+            border: none; 
+            color: rgb(255, 255, 255); 
+        }
+        .dropdown-toggle:hover,
+        .dropdown-toggle:focus {
+            color: aqua;
+            background-color: transparent;
+            box-shadow: none; 
+        }
+
+        .divmae{
+            background-color: white;
+            height: auto;
+            width: 60%;
+            justify-content: center;
+            margin-left: 20%;
+            padding-top: 10px;
+            padding-left: 40px;
+        }
+
+        col{
+            margin: 0%;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="divmenu">
+        <a href="componentes.html"><img src="https://th.bing.com/th/id/R.50e5a11b866f739cf5904f1fc0f80535?rik=o8mumcl4LvHtwQ&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258617bdog.png&ehk=a3mBf1C3uxf0QyBVX4dlwEfOeMbi1aVLsnascatqQ%2f4%3d&risl=&pid=ImgRaw&r=0" class="logpok"></a>
+        <ol class="header">
+            <li class="menu lipok"><a href="" >Início</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categoria
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="normal.html">Normal</a>
+                      <a class="dropdown-item" href="Fogo.html">Fogo</a>
+                      <a class="dropdown-item" href="agua.html">Água</a>
+                      <a class="dropdown-item" href="eletrico.html">Elétrico</a>
+                      <a class="dropdown-item" href="grama.html">Grama/planta</a>
+                      <a class="dropdown-item" href="gelo.html">Gelo</a>
+                      <a class="dropdown-item" href="luta.html">Luta</a>
+                      <a class="dropdown-item" href="Veneno.html">Veneno</a>
+                      <a class="dropdown-item" href="terra.html">Terra</a>
+                      <a class="dropdown-item" href="voador.html">Voador</a>
+                      <a class="dropdown-item" href="psiquico.html">Psíquico</a>
+                      <a class="dropdown-item" href="inseto.html">Inseto</a>
+                      <a class="dropdown-item" href="pedra.html">Pedra</a>
+                      <a class="dropdown-item" href="fantasma.html">Fantasma</a>
+                      <a class="dropdown-item" href="dragao.html">Dragão</a>
+                      <a class="dropdown-item" href="sombrio.html">Sombrio</a>
+                      <a class="dropdown-item" href="aco.html">Aço</a>
+                      <a class="dropdown-item" href="fada.html">Fada</a>
+                    </div>
+                  </div>
+            </li>
+            <li class="menu"><a href="treinador.html" >Treinador</a></li>
+            <li class="menu"><a href="cadastro.html" >Cadastro</a></li>
+        </ol>
+    </div>
+    <div>
+        <img src="https://wallpapercave.com/wp/wp4359884.jpg" class="imgheader">
+        <div class="textimgheader">
+            <h1 class="gera">Generation 8º</h1>
+            <h2>Pokémons Água</h2>
+        </div>
+    </div>
+    
+    <div class="divmae">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/816.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Sobble</h5>
+                        <p class="card-text"> Inicial lagarto do Tipo Água. Quando fica molhado, sua pele mudar de cor e ele pode se camuflar no ambiente. Quando fica assustado ele chora e suas lágrimas carregam uma carga química equivalente a 100 cebolas, fazendo que os atacantes não consigam resistir ao choro.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/818.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Inteleon</h5>
+                        <p class="card-text">Forma final do Sobble, Tipo Água. Atira projéteis de água das pontas dos dedos que podem atingir a velocidade supersônica (Mach 3). Possui uma membrana nas costas que é utilizada para deslizar no ar e possui membranas nos olhos que permitem que ele identifique pontos fracos.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/833.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Chewtle</h5>
+                        <p class="card-text">Pokémon mordedor Tipo Água, lembra uma tartaruga. A coceira provocada por seu dente em crescimento faz com que ele morda qualquer coisa à sua frente para tentar aliviar o incômodo. Em batalhas ele ataca com o seu chifre duro de pedra, mas assim que seu oponente vacila ele o morde e não o deixa sair facilmente.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/834.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Drednaw</h5>
+                        <p class="card-text">Evolução do Chewtle, Tipo Água/Pedra. É um Pokémon agressivo, capaz de esticar o seu pescoço retrátil para morder os inimigos distantes com suas presas afiadas que conseguem cortar hastes de aço.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/845.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Cramorant</h5>
+                        <p class="card-text">Pokémon pássaro engolidor, Tipo Água/Voador. É um Pokémon faminto capaz de engolir um Arrokuda inteiro, mas de vez em quando ele comete erros e engole outros Pokémon totalmente diferentes. Há relatos de que ele já engoliu até um Pikachu. Ele é tão forte que pode derrubar alguns adversários com um único golpe.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/846.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Arrokuda</h5>
+                        <p class="card-text">Pokémon peixe apressado, Tipo Água. Quando vê qualquer movimento nos arredores, ele corre até lá com seus dentes afiados do qual tem tanto orgulho. Depois que ele enche a barriga, seus movimentos ficam extremamente lentos. É nesse momento que o Cramorant consegue engolí-lo.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/847.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Barraskewda</h5>
+                        <p class="card-text">Evolução do Arrokuda, Tipo Água. Tem mandíbulas com dentes tão afiados quanto uma lança e tão fortes quanto aço. Ele gira as barbatanas da cauda para se impulsionar, atingindo velocidades acima de 180 km/h antes de abater sua presa. Dizem que sua carne é saborosa.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/882.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Dracovish</h5>
+                        <p class="card-text">Pokémon fóssil, Tipo Água/Dragão. Suas poderosas pernas são capazes de ultrapassar 60 km/h. Juntamente com sua forte mandíbula, fizeram dele o maior predador da época. No entanto, só conseguia respirar embaixo d'água. O excesso de caça levou a sua extinção.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;"></div>
+                        <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/883.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Artovish</h5>
+                        <p class="card-text">Pokémon fóssil, Tipo Água/Gelo. A pele em seu rosto é impenetrável. É capaz de capturar presas congelando seus arredores, porém tem dificuldade em se alimentar pelo fato da sua boca estar no topo da cabeça. Dificuldades respiratórios levaram esse pokémon a extinção.</p>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;"></div>
+                            <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/892.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                            <h5 class="card-title">Urshifu</h5>
+                            <p class="card-text">Evolução do Kubfu, pode ser Lutador/Água ou Lutador/Sombrio. A estratégia de luta do Tipo Sombrio consiste em se aproximar dos oponentes e desferir apenas um golpe devastador para acabar com a batalha. O Tipo Água desfere diversos golpes para derrotar seu oponente, tendo como inspiração a fluência constante de um rio.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
